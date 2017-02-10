@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EMMUpdateTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_wymusic" translatesAutoresizingMaskIntoConstraints="NO" id="dPR-5i-qEm">
+                        <rect key="frame" x="10" y="10" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="3Vv-sI-82d"/>
+                            <constraint firstAttribute="width" constant="64" id="v2j-lc-aaI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易云音乐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqE-ky-STM">
+                        <rect key="frame" x="82" y="10" width="181" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7Ei-EG-50p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本 3.29.1，65.5M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3O-Sx-rZh">
+                        <rect key="frame" x="82" y="31" width="181" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BDW-vm-dlF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-oB-AqC">
+                        <rect key="frame" x="79" y="53" width="59" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="e7b-RT-yMV"/>
+                            <constraint firstAttribute="height" constant="19" id="n3x-EO-JDH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="-33" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="新功能" image="icon_xiala">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="newFunctionButtonOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nYQ-BG-mWT"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-vn-vOv" customClass="PKDownloadButton">
+                        <rect key="frame" x="266" y="26" width="46" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="dUQ-ug-k6i"/>
+                            <constraint firstAttribute="height" constant="30" id="tmM-m8-SJL"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="TI6-bu-4uo"/>
+                        </connections>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年7月7日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xM-rB-LC2">
+                        <rect key="frame" x="82" y="53" width="176" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="176" id="10f-ac-7mo"/>
+                            <constraint firstAttribute="height" constant="21" id="phk-Mb-zE2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wpr-vn-vOv" firstAttribute="leading" secondItem="PqE-ky-STM" secondAttribute="trailing" constant="3" id="268-wV-Kfl"/>
+                    <constraint firstItem="Wpr-vn-vOv" firstAttribute="leading" secondItem="p3O-Sx-rZh" secondAttribute="trailing" constant="3" id="7A5-Pi-ez1"/>
+                    <constraint firstItem="PqE-ky-STM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BWy-HS-zkO"/>
+                    <constraint firstItem="dPR-5i-qEm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CYI-s4-tml"/>
+                    <constraint firstItem="dPR-5i-qEm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EUe-O7-5bC"/>
+                    <constraint firstItem="ugm-oB-AqC" firstAttribute="top" secondItem="p3O-Sx-rZh" secondAttribute="bottom" constant="1" id="EmU-gD-3Ur"/>
+                    <constraint firstItem="PqE-ky-STM" firstAttribute="leading" secondItem="dPR-5i-qEm" secondAttribute="trailing" constant="8" id="Lgk-A2-8dG"/>
+                    <constraint firstItem="Wpr-vn-vOv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="Lj7-UU-rBp"/>
+                    <constraint firstItem="1xM-rB-LC2" firstAttribute="top" secondItem="p3O-Sx-rZh" secondAttribute="bottom" constant="1" id="Z9g-cu-aYh"/>
+                    <constraint firstAttribute="trailing" secondItem="Wpr-vn-vOv" secondAttribute="trailing" constant="8" id="jtH-4u-OmL"/>
+                    <constraint firstItem="p3O-Sx-rZh" firstAttribute="top" secondItem="PqE-ky-STM" secondAttribute="bottom" id="kDz-NJ-jXL"/>
+                    <constraint firstItem="p3O-Sx-rZh" firstAttribute="leading" secondItem="dPR-5i-qEm" secondAttribute="trailing" constant="8" id="kXE-Jv-Zbv"/>
+                    <constraint firstItem="ugm-oB-AqC" firstAttribute="leading" secondItem="dPR-5i-qEm" secondAttribute="trailing" constant="5" id="r87-WN-EEk"/>
+                    <constraint firstItem="1xM-rB-LC2" firstAttribute="leading" secondItem="dPR-5i-qEm" secondAttribute="trailing" constant="8" id="wgv-P0-5Rh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="1xM-rB-LC2" id="9S4-DV-Yaq"/>
+                <outlet property="downloadButton" destination="Wpr-vn-vOv" id="RK5-oz-fiP"/>
+                <outlet property="funBtn" destination="ugm-oB-AqC" id="ILQ-ar-d5N"/>
+                <outlet property="icon" destination="dPR-5i-qEm" id="Lvb-k0-JKZ"/>
+                <outlet property="message" destination="p3O-Sx-rZh" id="Fcc-1D-4An"/>
+                <outlet property="title" destination="PqE-ky-STM" id="gaJ-74-04x"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_xiala" width="19" height="19"/>
+        <image name="img_wymusic" width="60" height="60"/>
+    </resources>
+</document>

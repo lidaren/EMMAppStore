@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMMGuestureLockViewController">
+            <connections>
+                <outlet property="contentMessage" destination="BLD-KY-Y1G" id="ZOv-RP-iRo"/>
+                <outlet property="titleMessage" destination="Of6-aX-z7O" id="wTZ-Aq-1E0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入手势密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of6-aX-z7O">
+                    <rect key="frame" x="126" y="84" width="122" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="两次绘制的密码不一致，请重新描绘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLD-KY-Y1G">
+                    <rect key="frame" x="48" y="135" width="278" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.36862745099999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40G-gK-Czy">
+                    <rect key="frame" x="170" y="607" width="35" height="30"/>
+                    <state key="normal" title="跳 过"/>
+                    <connections>
+                        <action selector="skipGuesturePassword:" destination="-1" eventType="touchUpInside" id="a6N-wY-sg4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="40G-gK-Czy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8YR-5E-akF"/>
+                <constraint firstItem="BLD-KY-Y1G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SYd-ON-H68"/>
+                <constraint firstItem="Of6-aX-z7O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="qOk-30-fH0"/>
+                <constraint firstItem="Of6-aX-z7O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sHV-Kc-Fbi"/>
+                <constraint firstAttribute="bottom" secondItem="40G-gK-Czy" secondAttribute="bottom" constant="30" id="sHa-KJ-OSe"/>
+                <constraint firstItem="BLD-KY-Y1G" firstAttribute="top" secondItem="Of6-aX-z7O" secondAttribute="bottom" constant="30" id="z1j-My-HSx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
