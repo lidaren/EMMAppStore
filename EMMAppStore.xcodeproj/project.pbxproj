@@ -104,6 +104,12 @@
 		18E624EB1DE6C4A500B1765C /* DBGuestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E624E91DE6C4A500B1765C /* DBGuestureLock.m */; };
 		18E624EF1DE6C4C600B1765C /* EMMGuestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E624ED1DE6C4C600B1765C /* EMMGuestureLockViewController.m */; };
 		18E624F01DE6C4C600B1765C /* EMMGuestureLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E624EE1DE6C4C600B1765C /* EMMGuestureLockViewController.xib */; };
+		18FEE7521E4D8E4000F0559E /* EMMDiscussViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE7501E4D8E4000F0559E /* EMMDiscussViewController.m */; };
+		18FEE7531E4D8E4000F0559E /* EMMDiscussViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FEE7511E4D8E4000F0559E /* EMMDiscussViewController.xib */; };
+		18FEE7571E4D8F5300F0559E /* EMMDiscussTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE7561E4D8F5300F0559E /* EMMDiscussTableViewCell.m */; };
+		18FEE75A1E4DA76B00F0559E /* ZJD_StarEvaluateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE7591E4DA76B00F0559E /* ZJD_StarEvaluateView.m */; };
+		18FEE75D1E4DA78C00F0559E /* UIView+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE75C1E4DA78C00F0559E /* UIView+View.m */; };
+		18FEE7601E4DAD4900F0559E /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE75F1E4DAD4900F0559E /* PlaceholderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,6 +316,17 @@
 		18E624EC1DE6C4C600B1765C /* EMMGuestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMGuestureLockViewController.h; sourceTree = "<group>"; };
 		18E624ED1DE6C4C600B1765C /* EMMGuestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMGuestureLockViewController.m; sourceTree = "<group>"; };
 		18E624EE1DE6C4C600B1765C /* EMMGuestureLockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMGuestureLockViewController.xib; sourceTree = "<group>"; };
+		18FEE74F1E4D8E4000F0559E /* EMMDiscussViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMDiscussViewController.h; sourceTree = "<group>"; };
+		18FEE7501E4D8E4000F0559E /* EMMDiscussViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMDiscussViewController.m; sourceTree = "<group>"; };
+		18FEE7511E4D8E4000F0559E /* EMMDiscussViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMDiscussViewController.xib; sourceTree = "<group>"; };
+		18FEE7551E4D8F5300F0559E /* EMMDiscussTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMDiscussTableViewCell.h; sourceTree = "<group>"; };
+		18FEE7561E4D8F5300F0559E /* EMMDiscussTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMDiscussTableViewCell.m; sourceTree = "<group>"; };
+		18FEE7581E4DA76B00F0559E /* ZJD_StarEvaluateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJD_StarEvaluateView.h; sourceTree = "<group>"; };
+		18FEE7591E4DA76B00F0559E /* ZJD_StarEvaluateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJD_StarEvaluateView.m; sourceTree = "<group>"; };
+		18FEE75B1E4DA78C00F0559E /* UIView+View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+View.h"; sourceTree = "<group>"; };
+		18FEE75C1E4DA78C00F0559E /* UIView+View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+View.m"; sourceTree = "<group>"; };
+		18FEE75E1E4DAD4900F0559E /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		18FEE75F1E4DAD4900F0559E /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +487,9 @@
 				18BCF3DE1E4AC706008A6971 /* EMMCommentTableViewController.h */,
 				18BCF3DF1E4AC706008A6971 /* EMMCommentTableViewController.m */,
 				18BCF3E01E4AC706008A6971 /* EMMCommentTableViewController.xib */,
+				18FEE74F1E4D8E4000F0559E /* EMMDiscussViewController.h */,
+				18FEE7501E4D8E4000F0559E /* EMMDiscussViewController.m */,
+				18FEE7511E4D8E4000F0559E /* EMMDiscussViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -484,6 +504,7 @@
 		18B1A1881DDABA4D0039D022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18FEE7541E4D8F2200F0559E /* DiscussCell */,
 				18D4B5161DE5413A002C00F7 /* EMMHomeOneTableViewCell.h */,
 				18D4B5171DE5413A002C00F7 /* EMMHomeOneTableViewCell.m */,
 				18E624DF1DE6877200B1765C /* EMMHomeTwoTableViewCell.h */,
@@ -913,6 +934,21 @@
 			path = DBGuestureLock;
 			sourceTree = "<group>";
 		};
+		18FEE7541E4D8F2200F0559E /* DiscussCell */ = {
+			isa = PBXGroup;
+			children = (
+				18FEE75E1E4DAD4900F0559E /* PlaceholderTextView.h */,
+				18FEE75F1E4DAD4900F0559E /* PlaceholderTextView.m */,
+				18FEE75B1E4DA78C00F0559E /* UIView+View.h */,
+				18FEE75C1E4DA78C00F0559E /* UIView+View.m */,
+				18FEE7581E4DA76B00F0559E /* ZJD_StarEvaluateView.h */,
+				18FEE7591E4DA76B00F0559E /* ZJD_StarEvaluateView.m */,
+				18FEE7551E4D8F5300F0559E /* EMMDiscussTableViewCell.h */,
+				18FEE7561E4D8F5300F0559E /* EMMDiscussTableViewCell.m */,
+			);
+			path = DiscussCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1032,6 +1068,7 @@
 				18B1A23C1DDABA4D0039D022 /* SVProgressHUD.bundle in Resources */,
 				18058E6D1DE436C600A652CD /* EMMStoreDetailViewController.xib in Resources */,
 				18B1A15D1DDAB3090039D022 /* Assets.xcassets in Resources */,
+				18FEE7531E4D8E4000F0559E /* EMMDiscussViewController.xib in Resources */,
 				18B1A2251DDABA4D0039D022 /* IQKeyboardManager.bundle in Resources */,
 				18B1A2341DDABA4D0039D022 /* MJRefresh.bundle in Resources */,
 				18B1A2481DDABAEE0039D022 /* EMMStoreViewController.xib in Resources */,
@@ -1082,6 +1119,8 @@
 				18B1A2271DDABA4D0039D022 /* MJRefreshBackFooter.m in Sources */,
 				18B1A2241DDABA4D0039D022 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1861927F1E4C14220097CD9F /* PKStopDownloadButton.m in Sources */,
+				18FEE75A1E4DA76B00F0559E /* ZJD_StarEvaluateView.m in Sources */,
+				18FEE75D1E4DA78C00F0559E /* UIView+View.m in Sources */,
 				18BCF3E11E4AC706008A6971 /* EMMCommentTableViewController.m in Sources */,
 				18B1A2191DDABA4D0039D022 /* IQUITextFieldView+Additions.m in Sources */,
 				18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */,
@@ -1093,10 +1132,13 @@
 				18B1A22C1DDABA4D0039D022 /* MJRefreshAutoNormalFooter.m in Sources */,
 				18B1A22F1DDABA4D0039D022 /* MJRefreshBackNormalFooter.m in Sources */,
 				186192831E4C180F0097CD9F /* PKDownloaderSimulator.m in Sources */,
+				18FEE7521E4D8E4000F0559E /* EMMDiscussViewController.m in Sources */,
 				18B1A23E1DDABA4D0039D022 /* SVRadialGradientLayer.m in Sources */,
 				18B1A2161DDABA4D0039D022 /* AFURLSessionManager.m in Sources */,
 				18B1A23B1DDABA4D0039D022 /* SVProgressAnimatedView.m in Sources */,
+				18FEE7571E4D8F5300F0559E /* EMMDiscussTableViewCell.m in Sources */,
 				18BCF3D71E4AAC73008A6971 /* EMMDetailsViewController.m in Sources */,
+				18FEE7601E4DAD4900F0559E /* PlaceholderTextView.m in Sources */,
 				186192791E4C14220097CD9F /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
 				18B1A2321DDABA4D0039D022 /* MJRefreshNormalHeader.m in Sources */,
 				18B1A23A1DDABA4D0039D022 /* SVIndefiniteAnimatedView.m in Sources */,
