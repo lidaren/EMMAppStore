@@ -43,7 +43,7 @@ static NSString *const eMMDiscussTableViewCell = @"EMMDiscussTableViewCell";
     UIButton *goToDiscussBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     goToDiscussBtn.frame = CGRectMake(ScreenW - 80 - 10, 15, 80, 20);
     [goToDiscussBtn setTitle:@"我要评论" forState:UIControlStateNormal];
-    [goToDiscussBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [goToDiscussBtn setTitleColor:YHColor(62, 167, 248) forState:UIControlStateNormal];
     [goToDiscussBtn addTarget:self action:@selector(gotoDiscussBtnOnClick) forControlEvents:UIControlEventTouchUpInside];
     [headerView addSubview:goToDiscussBtn];
     self.myTableView.tableHeaderView = headerView;

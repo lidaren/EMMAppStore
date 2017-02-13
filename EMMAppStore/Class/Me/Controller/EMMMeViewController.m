@@ -9,8 +9,9 @@
 #import "EMMMeViewController.h"
 #import "EMMLoginViewController.h"
 #import "MainNavigationController.h"
+#import "EMMAboutMeViewController.h"
 
-@interface EMMMeViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface EMMMeViewController ()<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic, weak) UIScrollView *backGroundView;
 
@@ -90,9 +91,19 @@
 }
 
 - (void)exitBtnOnClick{
-    NSLog(@"正在退出...");
-    UINavigationController *loginNavCtl = [[MainNavigationController alloc] initWithRootViewController:[[EMMLoginViewController alloc]init]];
-    [UIApplication sharedApplication].keyWindow.rootViewController = loginNavCtl;
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"是否退出应用程序" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"取消"style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        NSLog(@"取消");
+    }];
+    UIAlertAction* defaultAction2 = [UIAlertAction actionWithTitle:@"确定"style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        UINavigationController *loginNavCtl = [[MainNavigationController alloc] initWithRootViewController:[[EMMLoginViewController alloc]init]];
+        [UIApplication sharedApplication].keyWindow.rootViewController = loginNavCtl;
+    }];
+    [alert addAction:defaultAction];
+    [alert addAction:defaultAction2];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
 }
 
 #pragma mark -  ============= UITableView数据源和代理方法 ===============
@@ -127,35 +138,43 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            
+            // 已经安装应用
             break;
-            
         case 1:
             // 重置手势密码
             [self resetGesturePassWord];
             break;
-            
-        default:
+        default:{
+            // 关于我们
+            EMMAboutMeViewController *aboutMeCtl = [[EMMAboutMeViewController alloc] init];
+            [self.navigationController pushViewController:aboutMeCtl animated:YES];
+        }
             break;
     }
 }
 
 - (void)resetGesturePassWord{
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请输入一下账号的密码" message:@"18022223333" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请输入以下账号的密码" message:@"18022223333" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"密码";
         textField.secureTextEntry = YES;
+        textField.delegate = self;
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
-//    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertViewStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//        
-//    }];
+//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        
+    }];
     [alertController addAction:cancelAction];
     [alertController addAction:okAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+#pragma mark - ********** UITextFieldDelegate **********
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    YHLog(@"%@", textField.text);
 }
 
 @end

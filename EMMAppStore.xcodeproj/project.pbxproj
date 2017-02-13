@@ -13,6 +13,12 @@
 		18058E6D1DE436C600A652CD /* EMMStoreDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18058E6B1DE436C600A652CD /* EMMStoreDetailViewController.xib */; };
 		18058E711DE4433A00A652CD /* EMMStoreDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18058E6F1DE4433A00A652CD /* EMMStoreDetailTableViewCell.m */; };
 		18058E721DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18058E701DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib */; };
+		186036651E514EDE008652E9 /* EMMAboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186036631E514EDE008652E9 /* EMMAboutMeViewController.m */; };
+		186036661E514EDE008652E9 /* EMMAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186036641E514EDE008652E9 /* EMMAboutMeViewController.xib */; };
+		1860366A1E5154FA008652E9 /* EMMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186036681E5154FA008652E9 /* EMMSearchViewController.m */; };
+		1860366B1E5154FA008652E9 /* EMMSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186036691E5154FA008652E9 /* EMMSearchViewController.xib */; };
+		1860366E1E515829008652E9 /* EMMDownLoadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860366D1E515829008652E9 /* EMMDownLoadButton.m */; };
+		186036701E515843008652E9 /* EMMDownLoadButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860366F1E515843008652E9 /* EMMDownLoadButton.xib */; };
 		186192611E4C13EC0097CD9F /* EMMUpdateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861925F1E4C13EC0097CD9F /* EMMUpdateTableViewCell.m */; };
 		186192621E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186192601E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib */; };
 		186192781E4C14220097CD9F /* CALayer+PKDownloadButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 186192661E4C14220097CD9F /* CALayer+PKDownloadButtonAnimations.m */; };
@@ -139,6 +145,15 @@
 		18058E6E1DE4433A00A652CD /* EMMStoreDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMStoreDetailTableViewCell.h; sourceTree = "<group>"; };
 		18058E6F1DE4433A00A652CD /* EMMStoreDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMStoreDetailTableViewCell.m; sourceTree = "<group>"; };
 		18058E701DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMStoreDetailTableViewCell.xib; sourceTree = "<group>"; };
+		186036621E514EDE008652E9 /* EMMAboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMAboutMeViewController.h; sourceTree = "<group>"; };
+		186036631E514EDE008652E9 /* EMMAboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMAboutMeViewController.m; sourceTree = "<group>"; };
+		186036641E514EDE008652E9 /* EMMAboutMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMAboutMeViewController.xib; sourceTree = "<group>"; };
+		186036671E5154FA008652E9 /* EMMSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMSearchViewController.h; sourceTree = "<group>"; };
+		186036681E5154FA008652E9 /* EMMSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMSearchViewController.m; sourceTree = "<group>"; };
+		186036691E5154FA008652E9 /* EMMSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMSearchViewController.xib; sourceTree = "<group>"; };
+		1860366C1E515829008652E9 /* EMMDownLoadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMDownLoadButton.h; sourceTree = "<group>"; };
+		1860366D1E515829008652E9 /* EMMDownLoadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMDownLoadButton.m; sourceTree = "<group>"; };
+		1860366F1E515843008652E9 /* EMMDownLoadButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMDownLoadButton.xib; sourceTree = "<group>"; };
 		1861925E1E4C13EC0097CD9F /* EMMUpdateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMUpdateTableViewCell.h; sourceTree = "<group>"; };
 		1861925F1E4C13EC0097CD9F /* EMMUpdateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMUpdateTableViewCell.m; sourceTree = "<group>"; };
 		186192601E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMUpdateTableViewCell.xib; sourceTree = "<group>"; };
@@ -797,6 +812,9 @@
 		18B1A2011DDABA4D0039D022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1860366C1E515829008652E9 /* EMMDownLoadButton.h */,
+				1860366D1E515829008652E9 /* EMMDownLoadButton.m */,
+				1860366F1E515843008652E9 /* EMMDownLoadButton.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -818,6 +836,9 @@
 				18B1A24E1DDABB890039D022 /* EMMMeViewController.h */,
 				18B1A24F1DDABB890039D022 /* EMMMeViewController.m */,
 				18B1A2501DDABB890039D022 /* EMMMeViewController.xib */,
+				186036621E514EDE008652E9 /* EMMAboutMeViewController.h */,
+				186036631E514EDE008652E9 /* EMMAboutMeViewController.m */,
+				186036641E514EDE008652E9 /* EMMAboutMeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -862,6 +883,9 @@
 				18058E691DE436C600A652CD /* EMMStoreDetailViewController.h */,
 				18058E6A1DE436C600A652CD /* EMMStoreDetailViewController.m */,
 				18058E6B1DE436C600A652CD /* EMMStoreDetailViewController.xib */,
+				186036671E5154FA008652E9 /* EMMSearchViewController.h */,
+				186036681E5154FA008652E9 /* EMMSearchViewController.m */,
+				186036691E5154FA008652E9 /* EMMSearchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1056,6 +1080,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1860366B1E5154FA008652E9 /* EMMSearchViewController.xib in Resources */,
+				186036661E514EDE008652E9 /* EMMAboutMeViewController.xib in Resources */,
 				18B1A1601DDAB3090039D022 /* LaunchScreen.storyboard in Resources */,
 				18E624F01DE6C4C600B1765C /* EMMGuestureLockViewController.xib in Resources */,
 				18BCF3E21E4AC706008A6971 /* EMMCommentTableViewController.xib in Resources */,
@@ -1067,6 +1093,7 @@
 				186192621E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib in Resources */,
 				18B1A23C1DDABA4D0039D022 /* SVProgressHUD.bundle in Resources */,
 				18058E6D1DE436C600A652CD /* EMMStoreDetailViewController.xib in Resources */,
+				186036701E515843008652E9 /* EMMDownLoadButton.xib in Resources */,
 				18B1A15D1DDAB3090039D022 /* Assets.xcassets in Resources */,
 				18FEE7531E4D8E4000F0559E /* EMMDiscussViewController.xib in Resources */,
 				18B1A2251DDABA4D0039D022 /* IQKeyboardManager.bundle in Resources */,
@@ -1100,6 +1127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B1A2471DDABAEE0039D022 /* EMMStoreViewController.m in Sources */,
+				1860366E1E515829008652E9 /* EMMDownLoadButton.m in Sources */,
 				18E624EA1DE6C4A500B1765C /* DBGuestureButton.m in Sources */,
 				18D4B5181DE5413A002C00F7 /* EMMHomeOneTableViewCell.m in Sources */,
 				18B1A21D1DDABA4D0039D022 /* IQKeyboardManager.m in Sources */,
@@ -1123,6 +1151,7 @@
 				18FEE75D1E4DA78C00F0559E /* UIView+View.m in Sources */,
 				18BCF3E11E4AC706008A6971 /* EMMCommentTableViewController.m in Sources */,
 				18B1A2191DDABA4D0039D022 /* IQUITextFieldView+Additions.m in Sources */,
+				1860366A1E5154FA008652E9 /* EMMSearchViewController.m in Sources */,
 				18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */,
 				18B1A2201DDABA4D0039D022 /* IQBarButtonItem.m in Sources */,
 				186192801E4C14220097CD9F /* UIImage+PKDownloadButton.m in Sources */,
@@ -1141,6 +1170,7 @@
 				18FEE7601E4DAD4900F0559E /* PlaceholderTextView.m in Sources */,
 				186192791E4C14220097CD9F /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
 				18B1A2321DDABA4D0039D022 /* MJRefreshNormalHeader.m in Sources */,
+				186036651E514EDE008652E9 /* EMMAboutMeViewController.m in Sources */,
 				18B1A23A1DDABA4D0039D022 /* SVIndefiniteAnimatedView.m in Sources */,
 				18B1A2311DDABA4D0039D022 /* MJRefreshGifHeader.m in Sources */,
 				18B1A2231DDABA4D0039D022 /* IQToolbar.m in Sources */,

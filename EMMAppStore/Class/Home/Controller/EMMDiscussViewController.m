@@ -79,6 +79,11 @@
     }];
 }
 - (IBAction)finishButtonOnClick:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        if (self.delegate && [self.delegate respondsToSelector:@selector(eMMDiscussViewControllerBack)]) {
+            [self.delegate eMMDiscussViewControllerBack];
+        }
+    }];
 }
 
 @end

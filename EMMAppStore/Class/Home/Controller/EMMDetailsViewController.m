@@ -10,6 +10,7 @@
 #import "EMMDetailsViewController.h"
 #import "EMMDetailTableViewController.h"
 #import "EMMCommentTableViewController.h"
+#import "EMMDownLoadButton.h"
 
 #define headerViewHeight 170
 
@@ -97,6 +98,12 @@
     [chooseItem addTarget:self action:@selector(segmentAction:)forControlEvents:UIControlEventValueChanged];
     chooseItem.selectedSegmentIndex = 0;
     [introduceView addSubview:chooseItem];
+    // 下载按钮
+    UIView *downloadView = [[UIView alloc] initWithFrame:CGRectMake(ScreenW - 60, 80, 46, 30)];
+    downloadView.backgroundColor = [UIColor redColor];
+    EMMDownLoadButton *downloadButton = [EMMDownLoadButton show];
+    [downloadView addSubview:downloadButton];
+    [introduceView addSubview:downloadView];
     // 分割线
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, headerViewHeight - 1, ScreenW, 0.2)];
     lineView.backgroundColor = [UIColor grayColor];

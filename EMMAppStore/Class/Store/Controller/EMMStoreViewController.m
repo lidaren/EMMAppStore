@@ -8,6 +8,7 @@
 
 #import "EMMStoreViewController.h"
 #import "EMMStoreDetailViewController.h"
+#import "EMMSearchViewController.h"
 
 @interface EMMStoreViewModel : NSObject
 
@@ -73,6 +74,9 @@
  */
 - (void)rightBarButtonItemAction{
     YHLog(@"在市场中点击了搜索...");
+    
+    EMMSearchViewController *searchCtl = [[EMMSearchViewController alloc] init];
+    [self.navigationController pushViewController:searchCtl animated:YES];
 }
 
 #pragma mark -  ============= UITableView数据源和代理方法 ===============

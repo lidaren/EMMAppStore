@@ -11,7 +11,7 @@
 #import "EMMHomeTwoTableViewCell.h"
 #import "EMMDetailsViewController.h"
 
-@interface EMMHomeViewController ()<UITableViewDataSource, UITableViewDelegate, EMMHomeOneTableViewCellDelegate>
+@interface EMMHomeViewController ()<UITableViewDataSource, UITableViewDelegate, EMMHomeOneTableViewCellDelegate, EMMHomeTwoTableViewCellDelegate>
 
 /**
  首页的TableView
@@ -52,7 +52,10 @@ static NSString * const emmHomeTwoCell = @"eMMHomeTwoTableViewCell";
 }
 #pragma mark - ********** EMMHomeOneTableViewCellDelegate **********
 - (void)cellSelectBtnClick{
-    
+    EMMDetailsViewController *detailViewCtl = [[EMMDetailsViewController alloc] init];
+    [self.navigationController pushViewController:detailViewCtl animated:YES];
+}
+- (void)eMMHomeTwoTableViewCellSelectBtnClick{
     EMMDetailsViewController *detailViewCtl = [[EMMDetailsViewController alloc] init];
     [self.navigationController pushViewController:detailViewCtl animated:YES];
 }
@@ -82,7 +85,7 @@ static NSString * const emmHomeTwoCell = @"eMMHomeTwoTableViewCell";
     }else{
         
         EMMHomeTwoTableViewCell *homeTwoCell = [tableView dequeueReusableCellWithIdentifier:emmHomeTwoCell];
-        
+        homeTwoCell.delegate = self;
         return homeTwoCell;
     }
     

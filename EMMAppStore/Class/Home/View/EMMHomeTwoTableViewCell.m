@@ -95,6 +95,9 @@ static NSString * const eMMHomeColectionCell = @"eMMHomeCollectionViewCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     YHLog(@"点击了：%ld", (long)indexPath.row);
+    if (self.delegate && [self.delegate respondsToSelector:@selector(eMMHomeTwoTableViewCellSelectBtnClick)]) {
+        [self.delegate eMMHomeTwoTableViewCellSelectBtnClick];
+    }
 }
 
 @end

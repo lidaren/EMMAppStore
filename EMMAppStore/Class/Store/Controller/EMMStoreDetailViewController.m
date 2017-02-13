@@ -8,6 +8,7 @@
 
 #import "EMMStoreDetailViewController.h"
 #import "EMMStoreDetailTableViewCell.h"
+#import "EMMDetailsViewController.h"
 
 @interface EMMStoreDetailViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -47,14 +48,18 @@ static NSString * const EMMStoreDetailViewCell = @"eMMStoreDetailTableViewCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     EMMStoreDetailTableViewCell *eMMStoreDetailCell = [tableView dequeueReusableCellWithIdentifier:EMMStoreDetailViewCell];
-    
+    eMMStoreDetailCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return eMMStoreDetailCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 142;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    EMMDetailsViewController *detailViewCtl = [[EMMDetailsViewController alloc] init];
+    [self.navigationController pushViewController:detailViewCtl animated:YES];
 }
 
 @end
