@@ -110,13 +110,10 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _titleNameArr.count;
 }
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     static NSString *identifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -130,11 +127,9 @@
     
     return cell;
 }
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 20;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
@@ -144,17 +139,17 @@
             // 重置手势密码
             [self resetGesturePassWord];
             break;
-        default:{
+        default:
             // 关于我们
-            EMMAboutMeViewController *aboutMeCtl = [[EMMAboutMeViewController alloc] init];
-            [self.navigationController pushViewController:aboutMeCtl animated:YES];
-        }
+            [self.navigationController pushViewController:[[EMMAboutMeViewController alloc] init] animated:YES];
             break;
     }
 }
 
+/**
+ 修改手势密码
+ */
 - (void)resetGesturePassWord{
-    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"请输入以下账号的密码" message:@"18022223333" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"密码";
@@ -162,7 +157,6 @@
         textField.delegate = self;
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         
     }];

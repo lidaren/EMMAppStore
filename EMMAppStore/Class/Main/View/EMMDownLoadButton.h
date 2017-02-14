@@ -10,5 +10,4 @@
 
 @interface EMMDownLoadButton : UIView
 + (instancetype)show;
-- (void)star;
 @end

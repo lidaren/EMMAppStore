@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="282" id="KGk-i7-Jjw" customClass="EMMSearchResultsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="349"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_yixin" translatesAutoresizingMaskIntoConstraints="NO" id="WvA-K0-soM">
+                        <rect key="frame" x="8" y="8" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="9SZ-F8-L3m"/>
+                            <constraint firstAttribute="height" constant="84" id="D18-de-xPM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信-微信，是一种生活方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcn-EX-EpD">
+                        <rect key="frame" x="100" y="8" width="155" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AXu-4f-PG6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="腾讯科技有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu1-uU-Nfh">
+                        <rect key="frame" x="100" y="37" width="144" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8lJ-zT-ipw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34.2M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njj-WO-BNt">
+                        <rect key="frame" x="100" y="66" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="gq5-60-i3H"/>
+                            <constraint firstAttribute="height" constant="21" id="pyc-CB-Ra6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onh-8r-PON">
+                        <rect key="frame" x="264" y="45" width="46" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="R1W-Nu-A4W"/>
+                            <constraint firstAttribute="width" constant="46" id="gTs-q6-tTs"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWt-jf-LeG" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="100" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.29999999999999999" id="3S5-To-fnu"/>
+                        </constraints>
+                    </view>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6E-P5-dJ5">
+                        <rect key="frame" x="8" y="109" width="304" height="225.5"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="onh-8r-PON" firstAttribute="leading" secondItem="Uu1-uU-Nfh" secondAttribute="trailing" constant="20" id="0Wy-We-0tO"/>
+                    <constraint firstItem="c6E-P5-dJ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2Hj-Wi-hek"/>
+                    <constraint firstItem="c6E-P5-dJ5" firstAttribute="top" secondItem="TWt-jf-LeG" secondAttribute="bottom" constant="8" id="3wn-6g-ShK"/>
+                    <constraint firstAttribute="bottom" secondItem="c6E-P5-dJ5" secondAttribute="bottom" constant="15" id="9xR-Yy-qYz"/>
+                    <constraint firstItem="Uu1-uU-Nfh" firstAttribute="leading" secondItem="WvA-K0-soM" secondAttribute="trailing" constant="8" id="B0t-E4-2lk"/>
+                    <constraint firstItem="WvA-K0-soM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BZU-5c-VlU"/>
+                    <constraint firstItem="lcn-EX-EpD" firstAttribute="leading" secondItem="WvA-K0-soM" secondAttribute="trailing" constant="8" id="Cp1-wL-sDD"/>
+                    <constraint firstItem="WvA-K0-soM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JiV-Ua-GqF"/>
+                    <constraint firstItem="Uu1-uU-Nfh" firstAttribute="top" secondItem="lcn-EX-EpD" secondAttribute="bottom" constant="8" id="KaM-0a-T6A"/>
+                    <constraint firstItem="njj-WO-BNt" firstAttribute="top" secondItem="Uu1-uU-Nfh" secondAttribute="bottom" constant="8" id="Kxy-T4-BkB"/>
+                    <constraint firstAttribute="trailing" secondItem="c6E-P5-dJ5" secondAttribute="trailing" constant="8" id="T1g-fC-NZj"/>
+                    <constraint firstItem="TWt-jf-LeG" firstAttribute="top" secondItem="WvA-K0-soM" secondAttribute="bottom" constant="8" id="TbE-9Q-gjw"/>
+                    <constraint firstItem="lcn-EX-EpD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WGt-a7-lk0"/>
+                    <constraint firstAttribute="trailing" secondItem="TWt-jf-LeG" secondAttribute="trailing" id="X3g-Vt-WAN"/>
+                    <constraint firstAttribute="trailing" secondItem="lcn-EX-EpD" secondAttribute="trailing" constant="65" id="XYL-S7-Giq"/>
+                    <constraint firstAttribute="trailing" secondItem="onh-8r-PON" secondAttribute="trailing" constant="10" id="YIA-iT-wMb"/>
+                    <constraint firstItem="TWt-jf-LeG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bg9-gi-oMh"/>
+                    <constraint firstItem="onh-8r-PON" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="ty9-fT-jba"/>
+                    <constraint firstItem="njj-WO-BNt" firstAttribute="leading" secondItem="WvA-K0-soM" secondAttribute="trailing" constant="8" id="uDo-Ad-rJj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="company" destination="Uu1-uU-Nfh" id="DJV-uV-5AP"/>
+                <outlet property="downLoadView" destination="onh-8r-PON" id="Erp-6m-bqr"/>
+                <outlet property="fileSize" destination="njj-WO-BNt" id="iz3-hl-4es"/>
+                <outlet property="icon" destination="WvA-K0-soM" id="hvk-2c-sHq"/>
+                <outlet property="myScrollView" destination="c6E-P5-dJ5" id="Sua-oI-fec"/>
+                <outlet property="title" destination="lcn-EX-EpD" id="fl9-01-Lgk"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_yixin" width="100" height="100"/>
+    </resources>
+</document>

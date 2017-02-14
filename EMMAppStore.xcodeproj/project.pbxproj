@@ -31,6 +31,8 @@
 		1861927F1E4C14220097CD9F /* PKStopDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186192751E4C14220097CD9F /* PKStopDownloadButton.m */; };
 		186192801E4C14220097CD9F /* UIImage+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186192771E4C14220097CD9F /* UIImage+PKDownloadButton.m */; };
 		186192831E4C180F0097CD9F /* PKDownloaderSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 186192821E4C180F0097CD9F /* PKDownloaderSimulator.m */; };
+		1879A0FE1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A0FC1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m */; };
+		1879A0FF1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */; };
 		18B1A1521DDAB3090039D022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1511DDAB3090039D022 /* main.m */; };
 		18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1541DDAB3090039D022 /* AppDelegate.m */; };
 		18B1A1581DDAB3090039D022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1571DDAB3090039D022 /* ViewController.m */; };
@@ -178,6 +180,9 @@
 		186192771E4C14220097CD9F /* UIImage+PKDownloadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PKDownloadButton.m"; sourceTree = "<group>"; };
 		186192811E4C180F0097CD9F /* PKDownloaderSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDownloaderSimulator.h; sourceTree = "<group>"; };
 		186192821E4C180F0097CD9F /* PKDownloaderSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKDownloaderSimulator.m; sourceTree = "<group>"; };
+		1879A0FB1E529A6400C12D6C /* EMMSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMSearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		1879A0FC1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMSearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		18B1A14D1DDAB3090039D022 /* EMMAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMMAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1A1511DDAB3090039D022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B1A1531DDAB3090039D022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -900,6 +905,9 @@
 		18B1A20A1DDABA4D0039D022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1879A0FB1E529A6400C12D6C /* EMMSearchResultsTableViewCell.h */,
+				1879A0FC1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m */,
+				1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */,
 				18058E6E1DE4433A00A652CD /* EMMStoreDetailTableViewCell.h */,
 				18058E6F1DE4433A00A652CD /* EMMStoreDetailTableViewCell.m */,
 				18058E701DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib */,
@@ -1083,6 +1091,7 @@
 				1860366B1E5154FA008652E9 /* EMMSearchViewController.xib in Resources */,
 				186036661E514EDE008652E9 /* EMMAboutMeViewController.xib in Resources */,
 				18B1A1601DDAB3090039D022 /* LaunchScreen.storyboard in Resources */,
+				1879A0FF1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib in Resources */,
 				18E624F01DE6C4C600B1765C /* EMMGuestureLockViewController.xib in Resources */,
 				18BCF3E21E4AC706008A6971 /* EMMCommentTableViewController.xib in Resources */,
 				18058E681DE4176800A652CD /* EMMLoginViewController.xib in Resources */,
@@ -1178,6 +1187,7 @@
 				18B1A2151DDABA4D0039D022 /* AFURLResponseSerialization.m in Sources */,
 				18B1A2221DDABA4D0039D022 /* IQTitleBarButtonItem.m in Sources */,
 				18B1A2351DDABA4D0039D022 /* MJRefreshConst.m in Sources */,
+				1879A0FE1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m in Sources */,
 				18B1A2211DDABA4D0039D022 /* IQPreviousNextView.m in Sources */,
 				18B1A2181DDABA4D0039D022 /* IQUIScrollView+Additions.m in Sources */,
 				18B1A21B1DDABA4D0039D022 /* IQUIViewController+Additions.m in Sources */,

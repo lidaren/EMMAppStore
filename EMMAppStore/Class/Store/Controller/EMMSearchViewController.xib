@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMMSearchViewController">
             <connections>
+                <outlet property="mySearchBar" destination="mX8-Kp-1Sl" id="0il-MH-q3I"/>
+                <outlet property="myTableView" destination="Rmd-Hd-HoH" id="rhC-0r-LP2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -48,17 +50,29 @@
                     <rect key="frame" x="156" y="299" width="62" height="30"/>
                     <state key="normal" title="大众点评"/>
                 </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rmd-Hd-HoH">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Atw-TW-plw"/>
+                        <outlet property="delegate" destination="-1" id="ULu-Gv-2r1"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="KiB-jf-5dc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Gh-r8-1UW"/>
                 <constraint firstItem="Lfg-ga-Is1" firstAttribute="top" secondItem="c8E-hA-vUr" secondAttribute="bottom" constant="34" id="6uc-ot-sy2"/>
+                <constraint firstAttribute="bottom" secondItem="Rmd-Hd-HoH" secondAttribute="bottom" id="8iS-fs-pbe"/>
                 <constraint firstItem="mX8-Kp-1Sl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="NKM-hC-pSH"/>
                 <constraint firstAttribute="trailing" secondItem="mX8-Kp-1Sl" secondAttribute="trailing" id="T2z-ii-tqM"/>
                 <constraint firstItem="mX8-Kp-1Sl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VdG-fJ-EGf"/>
+                <constraint firstItem="Rmd-Hd-HoH" firstAttribute="top" secondItem="mX8-Kp-1Sl" secondAttribute="bottom" id="VgE-Pb-rKU"/>
                 <constraint firstItem="KiB-jf-5dc" firstAttribute="top" secondItem="Lfg-ga-Is1" secondAttribute="bottom" constant="20" id="WZt-AB-x2D"/>
                 <constraint firstItem="CYo-Fm-hNr" firstAttribute="top" secondItem="ZXI-sW-l2x" secondAttribute="bottom" constant="20" id="hyi-H0-0oY"/>
+                <constraint firstItem="Rmd-Hd-HoH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iaI-AV-ZoR"/>
                 <constraint firstItem="Lfg-ga-Is1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lLM-G3-t47"/>
+                <constraint firstAttribute="trailing" secondItem="Rmd-Hd-HoH" secondAttribute="trailing" id="lY7-0r-Yra"/>
                 <constraint firstItem="ZXI-sW-l2x" firstAttribute="top" secondItem="KiB-jf-5dc" secondAttribute="bottom" constant="20" id="lyk-If-8sI"/>
                 <constraint firstItem="c8E-hA-vUr" firstAttribute="top" secondItem="mX8-Kp-1Sl" secondAttribute="bottom" constant="86" id="m0V-RX-jkr"/>
                 <constraint firstItem="ZXI-sW-l2x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="szl-x5-9xI"/>

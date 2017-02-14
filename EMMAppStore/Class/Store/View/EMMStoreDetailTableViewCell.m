@@ -8,6 +8,10 @@
 
 #import "EMMStoreDetailTableViewCell.h"
 
+@interface EMMStoreDetailTableViewCell()
+
+@end
+
 @implementation EMMStoreDetailTableViewCell
 
 - (void)awakeFromNib {
