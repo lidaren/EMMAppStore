@@ -8,6 +8,7 @@
 
 #import "EMMUpdateViewController.h"
 #import "EMMUpdateTableViewCell.h"
+#import "EMMDetailsViewController.h"
 
 @interface EMMUpdateViewController ()<UITableViewDataSource, UITableViewDelegate, EMMUpdateTableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
@@ -84,6 +85,9 @@ static NSString * const eMMUpdateTableViewCell = @"eMMUpdateTableViewCell";
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 60;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:[[EMMDetailsViewController alloc] init] animated:YES];
 }
 
 #pragma mark - ********** cell的代理方法 **********

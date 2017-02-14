@@ -8,6 +8,7 @@
 
 #import "EMMSearchViewController.h"
 #import "EMMSearchResultsTableViewCell.h"
+#import "EMMDetailsViewController.h"
 
 @interface EMMSearchViewController ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
@@ -37,6 +38,9 @@ static NSString *const eMMSearchResultsTableViewCell = @"EMMSearchResultsTableVi
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     if ([searchBar.text isEqualToString:@""]) {
         self.myTableView.hidden = YES;
+    }else{
+        self.myTableView.hidden = NO;
+        [self.myTableView reloadData];
     }
 }
 // 点击搜索按钮时候查询
@@ -59,5 +63,7 @@ static NSString *const eMMSearchResultsTableViewCell = @"EMMSearchResultsTableVi
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 350.0;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:[[EMMDetailsViewController alloc] init] animated:YES];
+}
 @end

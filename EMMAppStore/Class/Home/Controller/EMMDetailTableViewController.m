@@ -8,6 +8,7 @@
 
 #import "EMMDetailTableViewController.h"
 #import "EMMHistoryVersionTableViewController.h"
+#import "EMMDetailInformationTableViewCell.h"
 
 #define headerViewHeight 170
 
@@ -16,7 +17,7 @@
 @end
 
 @implementation EMMDetailTableViewController
-
+static NSString * const eMMDetailInformationTableViewCell = @"EMMDetailInformationTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,6 +40,8 @@
     companyLabel.font = [UIFont systemFontOfSize:13];
     [footerView addSubview:companyLabel];
     self.myTableView.tableFooterView = footerView;
+    // 注册cell
+    [self.myTableView registerNib:[UINib nibWithNibName:NSStringFromClass([EMMDetailInformationTableViewCell class]) bundle:nil] forCellReuseIdentifier:eMMDetailInformationTableViewCell];
 }
 
 - (void)setUpMyTableViewHeaderView{
@@ -67,31 +70,43 @@
     return 5;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    if (indexPath.row < 3) {
+        EMMDetailInformationTableViewCell *searchResultsCell = [tableView dequeueReusableCellWithIdentifier:eMMDetailInformationTableViewCell];
+        searchResultsCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return searchResultsCell;
+        return nil;
+    }else{
+        static NSString *identifier = @"cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        //    cell.detailTextLabel.text = @"微信，是一个生活方式。\n· 在聊天中，可以发送文字、语音、表情、图片、视频等。\n· 高质量语音和视频通话，随时和朋友面对面。\n· 朋友圈，记录你和朋友们的生活。";
+        
+        switch (indexPath.row) {
+            case 3:
+                cell.textLabel.text = @"版本记录";
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                break;
+                
+            case 4:
+                cell.textLabel.text = @"开发人员其他App";
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                break;
+        }
+        
+        return cell;
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = @"测试测试测试...";
     
-    switch (indexPath.row) {
-        case 3:
-            cell.textLabel.text = @"版本记录";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            break;
-            
-        case 4:
-            cell.textLabel.text = @"开发人员其他App";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            break;
-//        default:
-//            break;
-    }
-    
-    return cell;
 }
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row < 3) {
+        return 106;
+    }else{
+        return 44;
+    }
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 3:

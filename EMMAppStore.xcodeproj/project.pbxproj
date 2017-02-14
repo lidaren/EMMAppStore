@@ -35,6 +35,10 @@
 		1879A0FF1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */; };
 		1879A1031E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A1011E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m */; };
 		1879A1041E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A1021E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib */; };
+		1879A1091E52E10A00C12D6C /* EMMDetailInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A1071E52E10A00C12D6C /* EMMDetailInformationTableViewCell.m */; };
+		1879A10A1E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A1081E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib */; };
+		1879A10F1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A10D1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m */; };
+		1879A1101E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A10E1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib */; };
 		18B1A1521DDAB3090039D022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1511DDAB3090039D022 /* main.m */; };
 		18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1541DDAB3090039D022 /* AppDelegate.m */; };
 		18B1A1581DDAB3090039D022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1571DDAB3090039D022 /* ViewController.m */; };
@@ -188,6 +192,12 @@
 		1879A1001E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMHistoryVersionTableViewController.h; sourceTree = "<group>"; };
 		1879A1011E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMHistoryVersionTableViewController.m; sourceTree = "<group>"; };
 		1879A1021E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMHistoryVersionTableViewController.xib; sourceTree = "<group>"; };
+		1879A1061E52E10A00C12D6C /* EMMDetailInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMDetailInformationTableViewCell.h; sourceTree = "<group>"; };
+		1879A1071E52E10A00C12D6C /* EMMDetailInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMDetailInformationTableViewCell.m; sourceTree = "<group>"; };
+		1879A1081E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMDetailInformationTableViewCell.xib; sourceTree = "<group>"; };
+		1879A10C1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMHistoryVersionTableViewCell.h; sourceTree = "<group>"; };
+		1879A10D1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMHistoryVersionTableViewCell.m; sourceTree = "<group>"; };
+		1879A10E1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMHistoryVersionTableViewCell.xib; sourceTree = "<group>"; };
 		18B1A14D1DDAB3090039D022 /* EMMAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMMAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1A1511DDAB3090039D022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B1A1531DDAB3090039D022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -405,6 +415,26 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		1879A1051E52E0C900C12D6C /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				1879A1061E52E10A00C12D6C /* EMMDetailInformationTableViewCell.h */,
+				1879A1071E52E10A00C12D6C /* EMMDetailInformationTableViewCell.m */,
+				1879A1081E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib */,
+			);
+			path = DetailCell;
+			sourceTree = "<group>";
+		};
+		1879A10B1E52E92800C12D6C /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				1879A10C1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.h */,
+				1879A10D1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m */,
+				1879A10E1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib */,
+			);
+			path = HistoryCell;
+			sourceTree = "<group>";
+		};
 		18B1A1441DDAB3090039D022 = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +562,8 @@
 		18B1A1881DDABA4D0039D022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1879A10B1E52E92800C12D6C /* HistoryCell */,
+				1879A1051E52E0C900C12D6C /* DetailCell */,
 				18FEE7541E4D8F2200F0559E /* DiscussCell */,
 				18D4B5161DE5413A002C00F7 /* EMMHomeOneTableViewCell.h */,
 				18D4B5171DE5413A002C00F7 /* EMMHomeOneTableViewCell.m */,
@@ -1109,6 +1141,7 @@
 				18B1A2571DDABB9A0039D022 /* EMMUpdateViewController.xib in Resources */,
 				186192621E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib in Resources */,
 				18B1A23C1DDABA4D0039D022 /* SVProgressHUD.bundle in Resources */,
+				1879A1101E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib in Resources */,
 				18058E6D1DE436C600A652CD /* EMMStoreDetailViewController.xib in Resources */,
 				186036701E515843008652E9 /* EMMDownLoadButton.xib in Resources */,
 				18B1A15D1DDAB3090039D022 /* Assets.xcassets in Resources */,
@@ -1119,6 +1152,7 @@
 				18BCF3D81E4AAC73008A6971 /* EMMDetailsViewController.xib in Resources */,
 				18B1A15B1DDAB3090039D022 /* Main.storyboard in Resources */,
 				18058E721DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib in Resources */,
+				1879A10A1E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib in Resources */,
 				1879A1041E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1185,6 +1219,7 @@
 				18B1A2161DDABA4D0039D022 /* AFURLSessionManager.m in Sources */,
 				18B1A23B1DDABA4D0039D022 /* SVProgressAnimatedView.m in Sources */,
 				18FEE7571E4D8F5300F0559E /* EMMDiscussTableViewCell.m in Sources */,
+				1879A1091E52E10A00C12D6C /* EMMDetailInformationTableViewCell.m in Sources */,
 				18BCF3D71E4AAC73008A6971 /* EMMDetailsViewController.m in Sources */,
 				18FEE7601E4DAD4900F0559E /* PlaceholderTextView.m in Sources */,
 				186192791E4C14220097CD9F /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
@@ -1219,6 +1254,7 @@
 				1861927C1E4C14220097CD9F /* PKCircleView.m in Sources */,
 				18B1A2361DDABA4D0039D022 /* NSBundle+MJRefresh.m in Sources */,
 				18B1A2111DDABA4D0039D022 /* AFHTTPSessionManager.m in Sources */,
+				1879A10F1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m in Sources */,
 				18BCF3E51E4AEAE0008A6971 /* EMMCommentTableViewCell.m in Sources */,
 				18B1A22A1DDABA4D0039D022 /* MJRefreshHeader.m in Sources */,
 				18058E6C1DE436C600A652CD /* EMMStoreDetailViewController.m in Sources */,

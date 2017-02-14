@@ -7,36 +7,39 @@
 //
 
 #import "EMMHistoryVersionTableViewController.h"
+#import "EMMHistoryVersionTableViewCell.h"
 
-@interface EMMHistoryVersionTableViewController ()
+@interface EMMHistoryVersionTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
 
 @implementation EMMHistoryVersionTableViewController
-
+static NSString * const eMMHistoryVersionTableViewCell = @"EMMHistoryVersionTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
     
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([EMMHistoryVersionTableViewCell class]) bundle:nil] forCellReuseIdentifier:eMMHistoryVersionTableViewCell];
 }
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 3;
 }
-
-/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 122;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    EMMHistoryVersionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:eMMHistoryVersionTableViewCell];
     
     return cell;
 }
-*/
+
 
 
 @end
