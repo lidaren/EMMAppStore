@@ -40,12 +40,11 @@
 - (void) webViewDidFinishLoad:(UIWebView *)webView {
     NSLog(@"加载完成－－－");
     [SVProgressHUD dismiss];
-    
-    [SVProgressHUD showErrorWithStatus:@"网络连接超时..."];
 }
 - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     NSLog(@"加载失败＝＝＝%@",error);
     [SVProgressHUD dismiss];
+    [SVProgressHUD showErrorWithStatus:@"网络连接超时..."];
 }
 
 @end

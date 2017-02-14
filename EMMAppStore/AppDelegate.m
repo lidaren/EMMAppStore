@@ -10,6 +10,7 @@
 #import "EMMLoginViewController.h"
 #import "MainTabBarController.h"
 #import "MainNavigationController.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -31,7 +32,12 @@
     UINavigationController *loginNavCtl = [[MainNavigationController alloc] initWithRootViewController:[[EMMLoginViewController alloc]init]];
     self.window.rootViewController = loginNavCtl;
     
-    return YES;
+    // 键盘管理,点击文本框输入时若遮挡住了文本框，则使文本框自动上移
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+    keyboardManager.enable = YES;
+    keyboardManager.keyboardDistanceFromTextField = 10;
+    keyboardManager.shouldResignOnTouchOutside = YES; // 控制点击背景是否收起键盘
+    // keyboardManager.enableAutoToolbar = NO; // 控制是否显示键盘上的工具条
     
     return YES;
 }

@@ -33,6 +33,8 @@
 		186192831E4C180F0097CD9F /* PKDownloaderSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 186192821E4C180F0097CD9F /* PKDownloaderSimulator.m */; };
 		1879A0FE1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A0FC1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m */; };
 		1879A0FF1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */; };
+		1879A1031E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A1011E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m */; };
+		1879A1041E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A1021E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib */; };
 		18B1A1521DDAB3090039D022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1511DDAB3090039D022 /* main.m */; };
 		18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1541DDAB3090039D022 /* AppDelegate.m */; };
 		18B1A1581DDAB3090039D022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1571DDAB3090039D022 /* ViewController.m */; };
@@ -183,6 +185,9 @@
 		1879A0FB1E529A6400C12D6C /* EMMSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMSearchResultsTableViewCell.h; sourceTree = "<group>"; };
 		1879A0FC1E529A6400C12D6C /* EMMSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		1879A0FD1E529A6400C12D6C /* EMMSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		1879A1001E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMHistoryVersionTableViewController.h; sourceTree = "<group>"; };
+		1879A1011E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMHistoryVersionTableViewController.m; sourceTree = "<group>"; };
+		1879A1021E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMHistoryVersionTableViewController.xib; sourceTree = "<group>"; };
 		18B1A14D1DDAB3090039D022 /* EMMAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMMAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1A1511DDAB3090039D022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B1A1531DDAB3090039D022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -510,6 +515,9 @@
 				18FEE74F1E4D8E4000F0559E /* EMMDiscussViewController.h */,
 				18FEE7501E4D8E4000F0559E /* EMMDiscussViewController.m */,
 				18FEE7511E4D8E4000F0559E /* EMMDiscussViewController.xib */,
+				1879A1001E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.h */,
+				1879A1011E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m */,
+				1879A1021E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1111,6 +1119,7 @@
 				18BCF3D81E4AAC73008A6971 /* EMMDetailsViewController.xib in Resources */,
 				18B1A15B1DDAB3090039D022 /* Main.storyboard in Resources */,
 				18058E721DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib in Resources */,
+				1879A1041E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,6 +1147,7 @@
 				18B1A2471DDABAEE0039D022 /* EMMStoreViewController.m in Sources */,
 				1860366E1E515829008652E9 /* EMMDownLoadButton.m in Sources */,
 				18E624EA1DE6C4A500B1765C /* DBGuestureButton.m in Sources */,
+				1879A1031E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.m in Sources */,
 				18D4B5181DE5413A002C00F7 /* EMMHomeOneTableViewCell.m in Sources */,
 				18B1A21D1DDABA4D0039D022 /* IQKeyboardManager.m in Sources */,
 				18B1A22E1DDABA4D0039D022 /* MJRefreshBackGifFooter.m in Sources */,
