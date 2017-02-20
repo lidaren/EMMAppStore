@@ -10,6 +10,8 @@
 #import "EMMLoginViewController.h"
 #import "MainNavigationController.h"
 #import "EMMAboutMeViewController.h"
+#import "EMMInstalledAppViewController.h"
+#import "EMMInstalledApplicationsViewController.h"
 
 @interface EMMMeViewController ()<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
@@ -134,6 +136,7 @@
     switch (indexPath.row) {
         case 0:
             // 已经安装应用
+            [self.navigationController pushViewController:[[EMMInstalledApplicationsViewController alloc] init] animated:YES];
             break;
         case 1:
             // 重置手势密码

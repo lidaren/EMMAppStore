@@ -21,12 +21,6 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -42,7 +36,9 @@
  */
 - (void)layoutSubviews
 {
-    
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 0.5, ScreenW, 0.3)];
+    lineView.backgroundColor = [UIColor grayColor];
+    [self addSubview:lineView];
 }
 
 - (void)createActivityUI{
@@ -52,12 +48,9 @@
     //    scrollView.contentSize =  CGSizeMake(ScreenW*2, 0);
     scrollView.showsHorizontalScrollIndicator = NO;
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 0.5, ScreenW, 0.3)];
-    lineView.backgroundColor = [UIColor grayColor];
-    
     self.backGroundView = scrollView;
     
-    [self addSubview:lineView];
+    
     [self addSubview:scrollView];
     
     // 添加Button

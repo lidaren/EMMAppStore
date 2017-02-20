@@ -71,12 +71,11 @@ static NSString * const emmHomeTwoCell = @"eMMHomeTwoTableViewCell";
     
     if (indexPath.section == 0) {
         EMMHomeOneTableViewCell *homeOneCell = [tableView dequeueReusableCellWithIdentifier:emmHomeOneCell];
-        homeOneCell.delegate = self;
         
         if (!homeOneCell) { // 注意：避免 Cell 复用带来问题
             homeOneCell = [[EMMHomeOneTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:emmHomeOneCell];
         }
-        
+        homeOneCell.delegate = self;
         homeOneCell.backgroundColor = [UIColor clearColor];
         homeOneCell.contentView.backgroundColor = [UIColor clearColor];
         homeOneCell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -85,6 +84,9 @@ static NSString * const emmHomeTwoCell = @"eMMHomeTwoTableViewCell";
     }else{
         
         EMMHomeTwoTableViewCell *homeTwoCell = [tableView dequeueReusableCellWithIdentifier:emmHomeTwoCell];
+        if (!homeTwoCell) {
+            homeTwoCell = [[EMMHomeTwoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:emmHomeTwoCell];
+        }
         homeTwoCell.delegate = self;
         return homeTwoCell;
     }

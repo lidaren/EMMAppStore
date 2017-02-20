@@ -39,6 +39,12 @@
 		1879A10A1E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A1081E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib */; };
 		1879A10F1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879A10D1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m */; };
 		1879A1101E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1879A10E1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib */; };
+		1899F90A1E5A78CE00F7D8B7 /* EMMInstalledAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899F9081E5A78CE00F7D8B7 /* EMMInstalledAppViewController.m */; };
+		1899F90B1E5A78CE00F7D8B7 /* EMMInstalledAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1899F9091E5A78CE00F7D8B7 /* EMMInstalledAppViewController.xib */; };
+		1899F90E1E5A79D900F7D8B7 /* EMMOperationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899F90D1E5A79D900F7D8B7 /* EMMOperationButton.m */; };
+		1899F9191E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899F9181E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.m */; };
+		1899F91D1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899F91B1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.m */; };
+		1899F91E1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1899F91C1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.xib */; };
 		18B1A1521DDAB3090039D022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1511DDAB3090039D022 /* main.m */; };
 		18B1A1551DDAB3090039D022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1541DDAB3090039D022 /* AppDelegate.m */; };
 		18B1A1581DDAB3090039D022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1A1571DDAB3090039D022 /* ViewController.m */; };
@@ -198,6 +204,16 @@
 		1879A10C1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMHistoryVersionTableViewCell.h; sourceTree = "<group>"; };
 		1879A10D1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMHistoryVersionTableViewCell.m; sourceTree = "<group>"; };
 		1879A10E1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMHistoryVersionTableViewCell.xib; sourceTree = "<group>"; };
+		1899F9071E5A78CE00F7D8B7 /* EMMInstalledAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMInstalledAppViewController.h; sourceTree = "<group>"; };
+		1899F9081E5A78CE00F7D8B7 /* EMMInstalledAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMInstalledAppViewController.m; sourceTree = "<group>"; };
+		1899F9091E5A78CE00F7D8B7 /* EMMInstalledAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMInstalledAppViewController.xib; sourceTree = "<group>"; };
+		1899F90C1E5A79D900F7D8B7 /* EMMOperationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMOperationButton.h; sourceTree = "<group>"; };
+		1899F90D1E5A79D900F7D8B7 /* EMMOperationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMOperationButton.m; sourceTree = "<group>"; };
+		1899F9171E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMInstalledAppTableViewCell.h; sourceTree = "<group>"; };
+		1899F9181E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMInstalledAppTableViewCell.m; sourceTree = "<group>"; };
+		1899F91A1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMInstalledApplicationsViewController.h; sourceTree = "<group>"; };
+		1899F91B1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMInstalledApplicationsViewController.m; sourceTree = "<group>"; };
+		1899F91C1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMInstalledApplicationsViewController.xib; sourceTree = "<group>"; };
 		18B1A14D1DDAB3090039D022 /* EMMAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMMAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1A1511DDAB3090039D022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B1A1531DDAB3090039D022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -884,6 +900,12 @@
 				186036621E514EDE008652E9 /* EMMAboutMeViewController.h */,
 				186036631E514EDE008652E9 /* EMMAboutMeViewController.m */,
 				186036641E514EDE008652E9 /* EMMAboutMeViewController.xib */,
+				1899F9071E5A78CE00F7D8B7 /* EMMInstalledAppViewController.h */,
+				1899F9081E5A78CE00F7D8B7 /* EMMInstalledAppViewController.m */,
+				1899F9091E5A78CE00F7D8B7 /* EMMInstalledAppViewController.xib */,
+				1899F91A1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.h */,
+				1899F91B1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.m */,
+				1899F91C1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -905,6 +927,10 @@
 		18B1A2061DDABA4D0039D022 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1899F90C1E5A79D900F7D8B7 /* EMMOperationButton.h */,
+				1899F90D1E5A79D900F7D8B7 /* EMMOperationButton.m */,
+				1899F9171E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.h */,
+				1899F9181E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1140,6 +1166,7 @@
 				18B1A2521DDABB890039D022 /* EMMMeViewController.xib in Resources */,
 				18B1A2571DDABB9A0039D022 /* EMMUpdateViewController.xib in Resources */,
 				186192621E4C13EC0097CD9F /* EMMUpdateTableViewCell.xib in Resources */,
+				1899F91E1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.xib in Resources */,
 				18B1A23C1DDABA4D0039D022 /* SVProgressHUD.bundle in Resources */,
 				1879A1101E52E95400C12D6C /* EMMHistoryVersionTableViewCell.xib in Resources */,
 				18058E6D1DE436C600A652CD /* EMMStoreDetailViewController.xib in Resources */,
@@ -1154,6 +1181,7 @@
 				18058E721DE4433A00A652CD /* EMMStoreDetailTableViewCell.xib in Resources */,
 				1879A10A1E52E10A00C12D6C /* EMMDetailInformationTableViewCell.xib in Resources */,
 				1879A1041E52D6CF00C12D6C /* EMMHistoryVersionTableViewController.xib in Resources */,
+				1899F90B1E5A78CE00F7D8B7 /* EMMInstalledAppViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,11 +1218,13 @@
 				18B1A23D1DDABA4D0039D022 /* SVProgressHUD.m in Sources */,
 				18B1A2141DDABA4D0039D022 /* AFURLRequestSerialization.m in Sources */,
 				18B1A2331DDABA4D0039D022 /* MJRefreshStateHeader.m in Sources */,
+				1899F9191E5A7BC500F7D8B7 /* EMMInstalledAppTableViewCell.m in Sources */,
 				18E624E41DE6884300B1765C /* EMMHomeCollectionViewCell.m in Sources */,
 				18B1A1581DDAB3090039D022 /* ViewController.m in Sources */,
 				18B1A2281DDABA4D0039D022 /* MJRefreshComponent.m in Sources */,
 				18B1A2101DDABA4D0039D022 /* MainTabBarController.m in Sources */,
 				18B1A21A1DDABA4D0039D022 /* IQUIView+Hierarchy.m in Sources */,
+				1899F91D1E5A8CCC00F7D8B7 /* EMMInstalledApplicationsViewController.m in Sources */,
 				18E624EF1DE6C4C600B1765C /* EMMGuestureLockViewController.m in Sources */,
 				18B1A2301DDABA4D0039D022 /* MJRefreshBackStateFooter.m in Sources */,
 				18B1A2271DDABA4D0039D022 /* MJRefreshBackFooter.m in Sources */,
@@ -1252,11 +1282,13 @@
 				18E624EB1DE6C4A500B1765C /* DBGuestureLock.m in Sources */,
 				18B1A2131DDABA4D0039D022 /* AFSecurityPolicy.m in Sources */,
 				1861927C1E4C14220097CD9F /* PKCircleView.m in Sources */,
+				1899F90E1E5A79D900F7D8B7 /* EMMOperationButton.m in Sources */,
 				18B1A2361DDABA4D0039D022 /* NSBundle+MJRefresh.m in Sources */,
 				18B1A2111DDABA4D0039D022 /* AFHTTPSessionManager.m in Sources */,
 				1879A10F1E52E95400C12D6C /* EMMHistoryVersionTableViewCell.m in Sources */,
 				18BCF3E51E4AEAE0008A6971 /* EMMCommentTableViewCell.m in Sources */,
 				18B1A22A1DDABA4D0039D022 /* MJRefreshHeader.m in Sources */,
+				1899F90A1E5A78CE00F7D8B7 /* EMMInstalledAppViewController.m in Sources */,
 				18058E6C1DE436C600A652CD /* EMMStoreDetailViewController.m in Sources */,
 				1861927A1E4C14220097CD9F /* PKBorderedButton.m in Sources */,
 				18B1A2261DDABA4D0039D022 /* MJRefreshAutoFooter.m in Sources */,
@@ -1416,6 +1448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EMMAppStore/EMMAppStore.pch";
 				INFOPLIST_FILE = EMMAppStore/Info.plist;
@@ -1431,6 +1464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EMMAppStore/EMMAppStore.pch";
 				INFOPLIST_FILE = EMMAppStore/Info.plist;

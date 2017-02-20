@@ -27,12 +27,6 @@ static NSString * const eMMHomeColectionCell = @"eMMHomeCollectionViewCell";
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void)layoutSubviews{
     
     _imagesArr = @[@"img_baidu", @"img_bfvideo", @"img_today", @"img_tmall", @"img_qqmall", @"img_souhu", @"img_zhihubao", @"img_aqiyi", @"img_gdmap", @"img_weibo"];
