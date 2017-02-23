@@ -87,6 +87,7 @@ static NSString * const eMMUpdateTableViewCell = @"eMMUpdateTableViewCell";
     return 60;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [EMMUserInfo sharedEMMUserInfo].isThree = NO;
     [self.navigationController pushViewController:[[EMMDetailsViewController alloc] init] animated:YES];
 }
 

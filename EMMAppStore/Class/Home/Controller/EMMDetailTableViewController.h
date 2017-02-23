@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class EMMApplicationModel;
 @interface EMMDetailTableViewController : UIViewController
-
+@property (nonatomic, strong) EMMApplicationModel *applicationModel;
 @end

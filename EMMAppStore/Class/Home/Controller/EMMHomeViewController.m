@@ -53,10 +53,12 @@ static NSString * const emmHomeTwoCell = @"eMMHomeTwoTableViewCell";
 #pragma mark - ********** EMMHomeOneTableViewCellDelegate **********
 - (void)cellSelectBtnClick{
     EMMDetailsViewController *detailViewCtl = [[EMMDetailsViewController alloc] init];
+    [EMMUserInfo sharedEMMUserInfo].isThree = NO;
     [self.navigationController pushViewController:detailViewCtl animated:YES];
 }
 - (void)eMMHomeTwoTableViewCellSelectBtnClick{
     EMMDetailsViewController *detailViewCtl = [[EMMDetailsViewController alloc] init];
+    [EMMUserInfo sharedEMMUserInfo].isThree = NO;
     [self.navigationController pushViewController:detailViewCtl animated:YES];
 }
 

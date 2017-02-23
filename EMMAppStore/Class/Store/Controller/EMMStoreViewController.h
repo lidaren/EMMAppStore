@@ -11,3 +11,8 @@
 @interface EMMStoreViewController : UIViewController
 
 @end
+
+@interface CategoryListData : NSObject
+@property (nonatomic, copy) NSString *ID; // 分类ID
+@property (nonatomic, copy) NSString *name; // 分类名称
+@end

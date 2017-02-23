@@ -64,6 +64,7 @@ static NSString *const eMMSearchResultsTableViewCell = @"EMMSearchResultsTableVi
     return 350.0;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [EMMUserInfo sharedEMMUserInfo].isThree = YES;
     [self.navigationController pushViewController:[[EMMDetailsViewController alloc] init] animated:YES];
 }
 @end

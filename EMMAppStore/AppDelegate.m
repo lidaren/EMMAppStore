@@ -11,6 +11,7 @@
 #import "MainTabBarController.h"
 #import "MainNavigationController.h"
 #import "IQKeyboardManager.h"
+#import "NSString+EMMExtension.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
+//    NSArray *array = [phoneVersion componentsSeparatedByString:@"."];
+    NSInteger version = [NSString version:phoneVersion];
+    NSLog(@"手机系统版本: %ld", (long)version);
     // 1.创建窗口
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;

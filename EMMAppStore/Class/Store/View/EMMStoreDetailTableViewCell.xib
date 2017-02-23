@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tmall" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-Ny-gmV">
@@ -27,10 +27,9 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苏宁易购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-Sq-MuR">
-                        <rect key="frame" x="119" y="24" width="77" height="21"/>
+                        <rect key="frame" x="119" y="24" width="69.5" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="R38-xL-pgh"/>
-                            <constraint firstAttribute="width" constant="77" id="tak-cy-rGG"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -68,6 +67,12 @@
                     <constraint firstItem="dS0-Ny-gmV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="wj9-x8-mW2"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="detailName" destination="tWz-gL-5bh" id="is2-4A-g5q"/>
+                <outlet property="icon" destination="dS0-Ny-gmV" id="CeP-9e-pF6"/>
+                <outlet property="name" destination="pCB-Sq-MuR" id="Neb-r4-Nle"/>
+                <outlet property="size" destination="OmF-XO-PzU" id="ePJ-n7-Myj"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

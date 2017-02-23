@@ -7,7 +7,6 @@
 //
 
 #import "EMMAboutMeViewController.h"
-#import "SVProgressHUD.h"
 
 @interface EMMAboutMeViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;

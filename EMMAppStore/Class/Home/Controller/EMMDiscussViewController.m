@@ -28,6 +28,8 @@
     [self setStar];
     // input
     [self setUpInputTextView];
+    
+    _starIndex = 5;
 }
 
 - (void)setUpInputTextView{
@@ -79,11 +81,31 @@
     }];
 }
 - (IBAction)finishButtonOnClick:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
-        if (self.delegate && [self.delegate respondsToSelector:@selector(eMMDiscussViewControllerBack)]) {
-            [self.delegate eMMDiscussViewControllerBack];
+    WEAKSELF
+    // 提交评论
+    NSDictionary *param = @{@"aid":@"58abaf58f6731f056a5ea049",
+                            @"content":self.placeholderTextView.text,
+                            @"star":@(_starIndex)
+                            };
+    [EMMHttpTool post:Comment_Save params:param success:^(id responseObj) {
+        NSData *responseData = responseObj;
+        NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:nil];
+        if ([responseDic[@"code"] isEqual:@200]) {
+            // 评论成功
+            [weakSelf dismissViewControllerAnimated:YES completion:^{
+                if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(eMMDiscussViewControllerBack)]) {
+                    [weakSelf.delegate eMMDiscussViewControllerBack];
+                }
+            }];
+        }else{
+            [SVProgressHUD showErrorWithStatus:@"评论提交失败，请检查网络！"];
         }
+        
+    } failure:^(NSError *error) {
+        YHLog(@"%@", error);
     }];
+    
+    
 }
 
 @end

@@ -7,8 +7,13 @@
 //
 
 #import "EMMStoreDetailTableViewCell.h"
+#import "EMMStoreDetailModel.h"
 
 @interface EMMStoreDetailTableViewCell()
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *size;
+@property (weak, nonatomic) IBOutlet UILabel *detailName;
 
 @end
 
@@ -19,10 +24,11 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setData:(EMMStoreDetailModel*)storeData{
+    [self.icon sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", ImagesUrl, storeData.icon]]];
+    self.name.text = storeData.name;
+    self.detailName.text = storeData.tip;
+    self.size.text = [NSString stringWithFormat:@"%@M", storeData.length];
 }
 
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EMMStoreDetailViewController : UIViewController
-
+@property (nonatomic, copy) NSString *cid;
 @end

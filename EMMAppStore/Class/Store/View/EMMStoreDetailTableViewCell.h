@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class EMMStoreDetailModel;
 @interface EMMStoreDetailTableViewCell : UITableViewCell
-
+- (void)setData:(EMMStoreDetailModel*)storeData;
 @end

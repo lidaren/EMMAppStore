@@ -11,4 +11,8 @@
 
 @interface EMMDetailsViewController : UIViewController
 
+/**
+ 应用的ID
+ */
+@property (nonatomic, copy) NSString *ID;
 @end
