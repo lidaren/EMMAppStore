@@ -81,6 +81,8 @@
  */
 @property (nonatomic, copy) NSString *did;
 
+@property (nonatomic, assign) CGFloat cellHeight; // 文字的高度
+
 
 // ************************************ 返回的json ************************************
 /*

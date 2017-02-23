@@ -64,7 +64,7 @@ static NSString * const eMMDetailInformationTableViewCell = @"EMMDetailInformati
     
     NSArray *imagesArr = self.applicationModel.screenshots;
     
-    CGRect frame = CGRectMake(20, 0, 180, 280);
+    CGRect frame = CGRectMake(20, 10, 180, 280);
     CGFloat space = 15;
     for (int i = 0; i < imagesArr.count; i++) {
         if (i != 0) {
@@ -89,6 +89,7 @@ static NSString * const eMMDetailInformationTableViewCell = @"EMMDetailInformati
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row < 3) {
         EMMDetailInformationTableViewCell *searchResultsCell = [tableView dequeueReusableCellWithIdentifier:eMMDetailInformationTableViewCell];
+        [searchResultsCell setInfo:self.applicationModel];
         searchResultsCell.selectionStyle = UITableViewCellSelectionStyleNone;
         return searchResultsCell;
         return nil;
