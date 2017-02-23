@@ -14,9 +14,4 @@
     return @{@"ID" : @"id"
              };
 }
-
-- (void)setCellHeight:(CGFloat)cellHeight{
-    
-}
-
 @end

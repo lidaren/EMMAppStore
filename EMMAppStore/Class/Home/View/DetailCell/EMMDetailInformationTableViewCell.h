@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class EMMApplicationModel;
+
 @interface EMMDetailInformationTableViewCell : UITableViewCell
 
-- (void)setInfo:(EMMApplicationModel *)model;
+- (void)setInfo:(NSDictionary *)model;
 
 @end

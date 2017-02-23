@@ -7,7 +7,6 @@
 //
 
 #import "EMMDetailInformationTableViewCell.h"
-#import "EMMApplicationModel.h"
 
 @interface EMMDetailInformationTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *titleName;     // 标题
@@ -21,7 +20,7 @@
     self.myTextView.editable = NO;
     self.myTextView.userInteractionEnabled = NO;
 }
-- (void)setInfo:(EMMApplicationModel *)model{
-    self.myTextView.text = model.summary;
+- (void)setInfo:(NSDictionary *)model{
+    
 }
 @end
